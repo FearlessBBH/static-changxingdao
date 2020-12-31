@@ -1,0 +1,216 @@
+/* Content */
+
+.content {
+    margin: 20px 0 56px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images/bg/bg_input.png) repeat;
+}
+
+.content .item {
+    width: 1105px;
+}
+
+
+/* title */
+
+.content .title {
+    height: 115px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .title>i {
+    width: 420px;
+    height: 1px;
+    background-color: #7C93E1;
+}
+
+.content .title>label {
+    line-height: 62px;
+    font-size: 32px !important;
+    font-weight: bold;
+    color: #105AA4;
+}
+
+
+/* End title */
+
+
+/* tips */
+
+.content .tips {
+    height: 154px;
+    border: 1px dashed #105AA4;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 3px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .tips>p {
+    width: 1016px;
+    color: #0860B9;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.content .tips>p:first-child {
+    margin-bottom: 20px;
+}
+
+
+/* End tips */
+
+
+/* stitle */
+
+.content .stitle {
+    margin-top: 60px;
+    height: 28px;
+    align-items: center;
+}
+
+.content .stitle>i {
+    margin-right: 13px;
+    width: 4px;
+    height: 22px;
+    background-color: #0860BA;
+}
+
+.content .stitle>label {
+    font-size: 24px !important;
+    font-weight: 400;
+    color: #0860B9;
+    line-height: 36px;
+}
+
+
+/* End stitle */
+
+
+/* input */
+
+.content>ul.input {
+    margin-top: 40px;
+    width: 1079px;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.content>ul.input>li {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 43px;
+    border: 1px solid #DCDCDC;
+    background-color: #fff;
+    align-items: flex-start;
+}
+
+.content>ul.input>li>label {
+    width: 116px;
+    height: 100%;
+    line-height: 43px;
+    font-size: 16px !important;
+    color: #105AA4;
+    text-align: center;
+}
+
+.content>ul.input>li>label>span {
+    color: #f00;
+}
+
+.content>ul.input>li>input {
+    height: 100%;
+    font-size: 16px !important;
+    background-color: transparent;
+    border: none;
+}
+
+.content>ul.input>li>input::placeholder,
+.content>ul.input>li.long>textarea::placeholder {
+    color: #ccc;
+}
+
+.content>ul.input>li.short {
+    margin-right: 77px;
+    width: 493px;
+}
+
+.content>ul.input>li.short:nth-child(2n+2) {
+    margin-right: 0;
+}
+
+.content>ul.input>li.short:nth-child(3),
+.content>ul.input>li.short:nth-child(4) {
+    margin-bottom: 0;
+}
+
+.content>ul.input>li.short>input {
+    width: 370px;
+}
+
+.content>ul.input>li.long>input {
+    width: 950px;
+}
+
+.content>ul.input>li.long>textarea {
+    width: 950px;
+    height: 300px;
+    border: none;
+    font-size: 16px !important;
+    line-height: 43px;
+}
+
+.content>ul.input>li>input::focus {
+    border: none !important;
+}
+
+
+/* End input */
+
+
+/* btn */
+
+.content .btn {
+    margin-top: 59px;
+    width: 432px;
+    height: 54px;
+    font-size: 24px !important;
+    font-weight: 400;
+    color: #fff;
+    background-color: #105AA4;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    transition: background .2s;
+}
+
+.content .btn:hover {
+    background-color: #ff8200;
+    cursor: pointer;
+}
+
+
+/* End btn */
+
+.content label.reset {
+    margin: 48px 0 57px;
+    height: 20px;
+    font-size: 18px !important;
+    color: #101010;
+}
+
+.content label.reset:hover {
+    border-bottom: 1px solid #101010;
+    cursor: pointer;
+}
+
+
+/* End Content */

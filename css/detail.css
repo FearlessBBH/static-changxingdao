@@ -1,0 +1,85 @@
+/* Title */
+
+.title {
+    margin: 50px 0 30px;
+    height: auto;
+    font-size: 32px !important;
+    font-weight: bold;
+    color: #010101;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* End Title */
+
+
+/* Times */
+
+.times {
+    margin-bottom: 38px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.times label {
+    margin: 0 30px;
+    color: #9a9a9a;
+}
+
+
+/* End Times */
+
+
+/* Content */
+
+.content {
+    margin-bottom: 160px;
+    width: 1142px;
+    height: auto;
+    flex-direction: column;
+}
+
+.content>img {
+    width: 100%;
+    height: 586px;
+    border: none;
+    background-color: #ccc;
+}
+
+.content>img:last-of-type {
+    margin-top: 80px;
+}
+
+.content>h2 {
+    margin: 74px 0 27px;
+    font-size: 24px !important;
+    font-weight: 400;
+    color: #000;
+}
+
+.content>p {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    text-indent: 2em;
+    line-height: 30px;
+    color: #7F808A;
+}
+
+.content>.imgs {
+    margin-top: 90px;
+    width: 100%;
+    height: 382px;
+    justify-content: space-between;
+}
+
+.content>.imgs img {
+    height: 100%;
+    border: none;
+    background-color: #ccc;
+}
+
+
+/* End Content */

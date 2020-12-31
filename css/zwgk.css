@@ -1,0 +1,331 @@
+/* List */
+
+.list {
+    margin-top: 40px;
+    width: 1167px;
+    height: 366px;
+    justify-content: space-between;
+}
+
+.list .item {
+    width: 565px;
+    height: 100%;
+    background: #FFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    align-items: center;
+}
+
+.list .item>.top {
+    padding-bottom: 15px;
+    width: 518px;
+    height: 43px;
+    align-items: flex-end;
+    border-bottom: 1px solid #D1D1D1;
+}
+
+.list .item>.top>i {
+    width: 3px;
+    height: 16px;
+    background-color: #2F56D7;
+}
+
+.list .item>.top>label {
+    margin-left: 13px;
+    width: 452px;
+    font-size: 20px !important;
+    font-weight: bold;
+    color: #000;
+}
+
+.list .item>.top>span {
+    font-size: 16px !important;
+    font-weight: 400;
+    color: #d4d4d4;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.list .item>.top>span:hover {
+    color: #000;
+}
+
+.list .item>ul {
+    width: 518px;
+    height: 307px;
+    flex-direction: column;
+    list-style: disc inside none;
+}
+
+.list .item>ul>li {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    width: 100%;
+    height: 51px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.list .item>ul>li:hover label {
+    border-bottom: 1px solid #222;
+}
+
+.list .item>ul>li>label {
+    color: #484848;
+    font-size: 16px !important;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+}
+
+.list .item>ul>li>span {
+    color: #9E9E9E;
+    font-size: 16px !important;
+    font-weight: 400;
+}
+
+
+/* End List */
+
+
+/* Card */
+
+.card {
+    position: relative;
+    margin-top: 46px;
+    width: 1167px;
+    height: 268px;
+}
+
+.card .grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 242px;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    align-items: center;
+    z-index: 6;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.card .grid>.top {
+    width: 100%;
+    height: 113px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #D1D1D1;
+    transition: all .3s;
+}
+
+.card .grid>.top>i {
+    width: 79px;
+    height: 79px;
+    border: none;
+    border-radius: 50%;
+    background-color: RGBA(255, 255, 255, .6);
+    background-image: url(../images/icon/icon_jc.png);
+    /* transition: all .3s; */
+}
+
+.card .grid>.top>label {
+    margin-left: 10px;
+    font-size: 20px !important;
+    font-weight: bold;
+    text-align: center;
+    color: #3C3C3C;
+}
+
+.card .grid>.bottom {
+    width: 100%;
+    height: 153px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .grid>.bottom>ul {
+    width: 164px;
+    height: auto;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.card .grid>.bottom>ul>li {
+    width: 64px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    border-bottom: 1px solid #fff;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.card .grid>.bottom>ul>li:nth-child(2n+1) {
+    margin-right: 33px;
+}
+
+.card .grid>.bottom>ul>li:nth-child(n+3) {
+    margin-top: 24px;
+}
+
+.card .grid>.bottom>ul>li:hover {
+    color: #2F56D7;
+}
+
+.card .grid:nth-child(2) {
+    left: 232px;
+    z-index: 5;
+}
+
+.card .grid:nth-child(2) i {
+    background-image: url(../images/icon/icon_zx.png);
+}
+
+.card .grid:nth-child(3) {
+    left: 463px;
+    z-index: 4;
+}
+
+.card .grid:nth-child(3) i {
+    background-image: url(../images/icon/icon_gl.png);
+}
+
+.card .grid:nth-child(4) {
+    left: 695px;
+    z-index: 3;
+}
+
+.card .grid:nth-child(4) i {
+    background-image: url(../images/icon/icon_fw.png);
+}
+
+.card .grid:nth-child(5) {
+    left: 926px;
+    z-index: 2;
+}
+
+.card .grid:nth-child(5) i {
+    background-image: url(../images/icon/icon_jg.png);
+}
+
+.card .on>.top>i {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.card .on>.top>label {
+    color: #fff;
+}
+
+.card .on:nth-child(1) {
+    border: 1px solid #27C2EA;
+    box-shadow: 0px 0px 5px 0px rgba(39, 194, 234, 0.65);
+}
+
+.card .on:nth-child(1)>.top {
+    background: url(../images/bg/bg_jc.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.card .on:nth-child(1)>.top>i {
+    background-image: url(../images/icon/icon_jc_white.png);
+}
+
+.card .on:nth-child(2) {
+    border: 1px solid #49D9BA;
+    box-shadow: 0px 0px 5px 0px rgba(73, 217, 186, 0.65);
+}
+
+.card .on:nth-child(2)>.top {
+    background: url(../images/bg/bg_zx.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.card .on:nth-child(2)>.top>i {
+    background-image: url(../images/icon/icon_zx_white.png);
+}
+
+.card .on:nth-child(3) {
+    border: 1px solid #866FFB;
+    box-shadow: 0px 0px 5px 0px rgba(134, 111, 251, 0.65);
+}
+
+.card .on:nth-child(3)>.top {
+    background: url(../images/bg/bg_gl.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.card .on:nth-child(3)>.top>i {
+    background-image: url(../images/icon/icon_gl_white.png);
+}
+
+.card .on:nth-child(4) {
+    border: 1px solid #FC5B90;
+    box-shadow: 0px 0px 5px 0px rgba(252, 91, 144, 0.65);
+}
+
+.card .on:nth-child(4)>.top {
+    background: url(../images/bg/bg_fw.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.card .on:nth-child(4)>.top>i {
+    background-image: url(../images/icon/icon_fw_white.png);
+}
+
+.card .on:nth-child(5) {
+    border: 1px solid #76A4FF;
+    box-shadow: 0px 0px 5px 0px rgba(118, 164, 255, 0.65);
+}
+
+.card .on:nth-child(5)>.top {
+    background: url(../images/bg/bg_jg.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.card .on:nth-child(5)>.top>i {
+    background-image: url(../images/icon/icon_jg_white.png);
+}
+
+
+/* End Card */
+
+
+/* Btn */
+
+.btn {
+    margin: 44px 0 41px;
+    height: 46px;
+    justify-content: flex-end;
+}
+
+.btn .item {
+    margin-right: 15px;
+    width: 244px;
+    height: 100%;
+    font-size: 18px !important;
+    font-weight: bold;
+    color: #fff;
+    text-indent: 20px;
+    justify-content: center;
+    align-items: center;
+    background: #5978DF url(../images/icon/icon_pose.png) no-repeat 48px center;
+    border-radius: 3px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn .item:hover {
+    background-color: #FF9704;
+}
+
+
+/* End Btn */

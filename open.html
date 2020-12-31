@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长兴岛</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/video-js.min.css">
+    <script src="js/video.min.js"></script>
+    <style>
+        body {
+            height: 100%;
+            /* overflow: hidden; */
+        }
+        
+        .wrapper {
+            justify-content: center;
+        }
+        
+        .btn {
+            position: fixed;
+            top: 65%;
+            left: 50%;
+            margin-left: -179px;
+            width: 355px;
+            height: 102px;
+            /* border: 1px solid #000; */
+            cursor: pointer;
+        }
+        
+        #v1,
+        video {
+            object-fit: contain;
+        }
+        
+        .vjs-poster {
+            background-color: #fff !important;
+        }
+        
+        .vjs-control-text {
+            color: transparent !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper flex">
+        <video id="v1" poster="images/open.jpg" x5-video-player-type="h5" webkit-playsinline="true" playsinline="true" x5-video-orientation="h5" x-webkit-airplay="true">
+            <source src="video/video.mp4" type="video/mp4" />
+        </video>
+        <div class="btn"></div>
+    </div>
+    <script>
+        window.onload = function() {
+            let max_W = document.documentElement.clientWidth;
+            let max_H = document.documentElement.clientHeight;
+            let _wrapper = document.querySelector('.wrapper');
+            let v1 = document.querySelector('video');
+            let btn = document.querySelector('.btn');
+
+            _wrapper.style.width = max_W + 'px';
+            _wrapper.style.height = max_H + 'px';
+            v1.style.height = max_H + 'px';
+            var player = videojs('v1', {
+                controls: false,
+                preload: 'auto',
+                // width: max_W,
+                height: max_H,
+                controlBar: {
+                    fullscreenToggle: false
+                }
+            }, function() {
+                btn.addEventListener('click', () => {
+                    // console.log(btn);
+                    this.play();
+                    btn.style.display = 'none';
+                });
+                this.on('ended', function() {
+                    console.log('End');
+                    window.location.href = 'http://oa.ovinfo.com:8080/cxd_website_2020/';
+                })
+            });
+        };
+    </script>
+</body>
+
+</html>

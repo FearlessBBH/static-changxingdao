@@ -1,0 +1,273 @@
+.container {
+    margin-top: 333px;
+    width: 100% !important;
+}
+
+
+/* Big_title */
+
+.Big_title {
+    position: relative;
+    height: 42px;
+}
+
+.Big_title .grid {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    height: 97px;
+}
+
+
+/* End Big_title */
+
+
+/* Introduce */
+
+.introduce {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduce>h2,
+.swiper .column>h2,
+.traffic>h2,
+.place .column>h2 {
+    margin-top: 73px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 34px !important;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.introduce>p {
+    margin-top: 64px;
+    width: 1097px;
+    font-size: 16px !important;
+    font-weight: 400;
+    color: #000;
+    line-height: 42px;
+    text-indent: 2em;
+}
+
+.introduce .btn,
+.swiper .btn,
+.place .column .btn {
+    margin: 72px 0 67px;
+    width: 216px;
+    height: 48px;
+    font-size: 18px !important;
+    font-weight: 400;
+    color: #FEFEFE;
+    border-radius: 23.5px;
+    background-color: #2F56D7;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.introduce .btn:hover,
+.swiper .btn:hover,
+.place .column .btn:hover {
+    background-color: #FF9704;
+}
+
+
+/* End Introduce */
+
+
+/* Swiper */
+
+.swiper,
+.place {
+    width: 100%;
+    height: 618px;
+    background: url(../images/bg/bg_list2_1.jpg) no-repeat center top;
+    justify-content: center;
+}
+
+.swiper .column,
+.place .column {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper .column>h2 {
+    margin-top: 54px;
+}
+
+.swiper .center {
+    position: relative;
+    margin-top: 52px;
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+}
+
+.swiper .swiper-container {
+    /* margin-top: 52px; */
+    width: 1137px;
+    height: 100%;
+    /* overflow: visible; */
+}
+
+.swiper-wrapper {
+    /* margin-left: 50px; */
+    width: 1137px;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.swiper-slide {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    margin: 0 11px;
+    padding: 0 18px;
+    width: 320px !important;
+    height: 326px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 1px solid rgba(255, 255, 255, .8);
+    transition: all .3s;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.swiper-slide:hover {
+    background-color: #fff;
+    border: 1px solid #2F56D7;
+}
+
+.swiper-slide>h3 {
+    margin-top: 20px;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    font-size: 22px !important;
+    font-weight: 400;
+    color: #000;
+}
+
+.swiper-slide>p {
+    margin-top: 18px;
+    width: 100%;
+    height: 33px;
+    line-height: 21px;
+    font-size: 11px !important;
+    font-weight: 400;
+    color: #666;
+}
+
+.swiper-slide>img {
+    margin-top: 17px;
+    width: 100%;
+    height: 202px;
+    border: none;
+    background-color: #ccc;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper .btn {
+    margin: 54px 0 46px;
+    background-color: rgba(47, 86, 215, .8);
+}
+
+
+/* End Swiper */
+
+
+/* Traffic */
+
+.traffic {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.traffic>h2 {
+    margin-top: 77px;
+}
+
+.traffic>.bottom {
+    margin: 84px 0 112px;
+    width: 100%;
+    height: 332px;
+    justify-content: space-between;
+}
+
+.traffic>.bottom>.left {
+    width: 485px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.traffic>.bottom>.left>.grid {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.traffic>.bottom>.left>.grid>h3 {
+    font-size: 24px !important;
+    font-weight: 400;
+    color: #222;
+}
+
+.traffic>.bottom>.left>.grid>p {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 16px !important;
+    font-weight: 400;
+    color: #666;
+}
+
+.traffic>.bottom>.right {
+    width: 578px;
+    height: 100%;
+    border: 1px solid #C9C9C9;
+}
+
+
+/* End Traffic */
+
+
+/* Place */
+
+.place {
+    height: 316px;
+    background: url(../images/bg/bg_list2_2.jpg) no-repeat center top;
+}
+
+.place .column>h2 {
+    margin-top: 69px;
+    font-weight: 400;
+}
+
+.place .column>p {
+    margin-top: 41px;
+    width: 100%;
+    font-size: 18px !important;
+    color: #666;
+    text-align: center;
+}
+
+.place .column .btn {
+    margin: 46px 0 61px;
+}
+
+
+/* End Place */
